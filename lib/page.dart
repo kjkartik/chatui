@@ -8,11 +8,14 @@ class ChannelPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: ChannelHeader(),
-      body:Column(
-        children: [Expanded(child: MessageListView(),
-        ),
+      body: Column(
+        children: [
+          Expanded(
+            child: MessageListView(),
+          ),
           MessageInput(),
         ],
-      ));
+      ),
+    );
   }
 }
